@@ -27,7 +27,7 @@ function getInfoPlenets(page){
     };
     return axios.get(BASE + planets + page)
     .then((res) => {
-        return res.data.characters;
+        return res.data.results;
     });
 }
 
